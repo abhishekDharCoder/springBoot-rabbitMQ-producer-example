@@ -1,0 +1,15 @@
+spring:
+   rabbitmq:
+            host: localhost
+            port: 5672
+            username: abhi
+            password: abhi
+            virtualhost: vhost
+
+rabbitmq:
+      exchange: exchange_1
+      queue: queue_1
+      dlexchange: dl_exchange_1
+      dlqueue: dl_queue_1
+      retry: 6000  #Time to push message from dlq to queue for retry purpose     
+
